@@ -1,0 +1,38 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+/* global */
+body {
+	top: 0;
+	left: 0;
+}
+
+/* navbar */
+.navbar-burger.is-active {
+	background-color: hsl(0, 0%, 96%);
+}
+
+
+/*desktop*/
+@media screen and (min-width: 1024px) {
+	#mainNavBar {
+		width: 1024px;
+	}
+
+	.navbar-item  > .navbar-link,
+	.navbar-start > .navbar-item {
+		color: hsl(0, 0%, 96%);
+	}
+
+}
+
+/*mobile*/
+@media screen and (max-width: 1023px) {
+	#mainNavBar {
+		width: 100vw;
+	}
+
+	.navbar-start a {
+		color: hsl(0, 0%, 21%);
+	}
+
+}
