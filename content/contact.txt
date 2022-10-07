@@ -1,0 +1,85 @@
+
+			<div class="container">
+
+				<!-- set the fancy line through text thing to title -->
+				<fieldset>
+					<!-- title thing for form -->
+					<legend>
+						<h1 class="title is-3 has-text-grey-lighter">
+							<strong>Contact Us :D</strong>
+						</h1>
+					</legend>
+
+					<!-- Name -->
+					<div class="field">
+						<!-- label -->
+						<label class="label has-text-grey-light">Name<span class="has-text-danger">*</span></label>
+						<div class="control">
+							<!-- input -->
+							<input id="nameInput" class="button is-outlined is-grey has-background-black has-text-light has-text-left is-fullwidth" type="text" placeholder="John Doe">
+						</div>
+						<!-- error -->
+						<p id="nameError" class="help is-danger"></p>
+					</div>
+
+					<!-- Email -->
+					<div class="field">
+						<!-- label -->
+						<label class="label has-text-grey-light">Email<span class="has-text-danger">*</span></label>
+						<div class="control">
+							<!-- input -->
+							<input id="emailInput" class="button is-outlined is-grey has-background-black has-text-light has-text-left is-fullwidth" type="email" placeholder="johndoe123@email.com">
+						</div>
+						<!-- error -->
+						<p id="emailError" class="help is-danger"></p>
+					</div>
+
+					<div class="field">
+						<!-- label -->
+						<label class="label has-text-grey-light">Subject</label>
+						<div class="control">
+							<!-- selections -->
+							<select id="subjectSelect" class="button is-outlined is-grey has-background-black has-text-light">
+								<option value=0 >---</option>
+								<option value=1 >Kit</option>
+								<option value=2 >Cases</option>
+								<option value=3 >Keycaps</option>
+								<option value=4 >Purchase</option>
+								<option value=5 >Other</option>
+								<option value=6 >Error</option>
+							</select>
+						</div>
+						<!-- error -->
+						<p id="subjectError" class="help is-danger"></p>
+					</div>
+
+					<div class="field">
+						<!-- label -->
+						<label class="label has-text-grey-light">Your Message<span class="has-text-danger">*</span></label>
+						<div class="control">
+							<!-- text area -->
+							<textarea id="descriptionTextArea" class="button is-outlined is-grey has-background-black has-text-light has-text-left is-fullwidth" placeholder="Please input your message here, thank you!"></textarea>
+						</div>
+						<!-- error -->
+						<p id="descriptionError" class="help is-danger"></p>
+					</div>
+
+					<div class="field">
+						<div class="control">
+							<label class="checkbox has-text-grey-light">
+								<!-- select box -->
+								<input id="termsAndConditionsCheck" type="checkbox">
+								<!-- text and link -->
+								<em class="has-text-grey-light">I agree to the <a href="#" class="is-link">terms and conditions</a></em>
+							</label>
+						</div>
+						<!-- error -->
+						<p id="termsAndConditionsError" class="help is-danger"></p>
+					</div>
+
+					<div class="control">
+						<!-- submit button -->
+						<button onclick="emailSubmit()" class="button is-link is-outlined"><strong>Submit</strong></button>
+					</div>
+				</fieldset>
+			</div>
